@@ -82,6 +82,10 @@
 
 # 使用者交互与设计（axure产品原型）
 - 产品架构
+![产品结构图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191225011805.png)
+
+- 产品流程
+![产品流程图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912250118051.png)
 
 
 
