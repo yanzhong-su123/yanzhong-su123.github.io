@@ -164,6 +164,174 @@
 ### ⭐️API1.使用水平
 完整代码请点击：
 实例代码
+#### 1.通用物体和场景识别
+##### 首先创建应用，然后获得官网中client_id 为官网获取的AK， client_secret 为官网获取的SK，来用于请求获得access_token
+```
+import requests 
+
+# client_id 为官网获取的AK， client_secret 为官网获取的SK
+host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=rVkO722ZXcjRsmrL3PGmnpTm&client_secret=7eLRAaKAN0M2UnmPB0xlB5yMskN88yys'
+response = requests.get(host)
+if response:
+    print(response.json())
+```
+#### 返回Access_token结果
+![image.png]()
+![image.png]()
+
+
+#### 2.图片风格置换
+```
+import requests
+import base64
+
+'''
+通用物体和场景识别
+'''
+def Picture_content_recognition():
+    request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v2/advanced_general"   ##申请调用百度AI的API接口的URL
+    f = open('/Users/pc/Desktop/photo.jpg', 'rb')  ##打开本地图片的路径
+    img = base64.b64encode(f.read())
+
+    params = {"image":img
+         }   ##设置请求参数：图片
+    params["baike_num"] = str(img,'utf-8')
+    access_token = '[ 24.e32e28d453badf271e6296905d123cb2.2592000.1580290786.282335-18141929]'  ##获取认证的参数值 access_token
+    request_url = request_url + "?access_token=" + access_token
+    headers = {'content-type': 'application/x-www-form-urlencoded'}
+    response = requests.post(request_url, data=params, headers=headers)
+    print (response.json())
+    
+if __name__ == "__main__":
+    Picture_content_recognition()
+```
+
+![image.png]()
+![image.png]()
+
+#### 3.人体抠像
+```
+import urllib.request ##人体抠像
+import urllib.error
+import time
+
+http_url = 'https://api-cn.faceplusplus.com/humanbodypp/v2/segment'  ##申请调用的API接口的URL
+key = "_-mm3fWeDC8VGwrTDjCJJwX5A5qDosKi"  ##创建应用后的API_key
+secret = "rKLRM6_QAwHxgMpQTMxNqoigLhgcCrqw"   ##创建应用后的API_secret
+filepath = r"/Users/pc/Desktop/timg.jpg"   ##改成自己图片的路径
+
+boundary = '----------%s' % hex(int(time.time() * 1000))
+data = []
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'api_key')
+data.append(key)
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'api_secret')
+data.append(secret)
+data.append('--%s' % boundary)
+fr = open(filepath, 'rb')
+data.append('Content-Disposition: form-data; name="%s"; filename=" "' % 'image_file')
+data.append('Content-Type: %s\r\n' % 'application/octet-stream')
+data.append(fr.read())
+fr.close()
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'return_landmark')
+data.append('1')
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'return_attributes')
+data.append(
+    "gender,age,smiling,headpose,facequality,blur,eyestatus,emotion,ethnicity,beauty,mouthstatus,eyegaze,skinstatus")
+data.append('--%s--\r\n' % boundary)
+
+for i, d in enumerate(data):
+    if isinstance(d, str):
+        data[i] = d.encode('utf-8')
+
+http_body = b'\r\n'.join(data)
+
+# build http request
+req = urllib.request.Request(url=http_url, data=http_body)
+
+# header
+req.add_header('Content-Type', 'multipart/form-data; boundary=%s' % boundary)
+
+try:
+    # post data to server
+    resp = urllib.request.urlopen(req, timeout=5)
+    # get response
+    qrcont = resp.read()
+    # if you want to load as json, you should decode first,
+    # for example: json.loads(qrount.decode('utf-8'))
+    print(qrcont.decode('utf-8'))
+except urllib.error.HTTPError as e:
+    print(e.read().decode('utf-8'))
+```
+
+![image.png]()
+![image.png]()
+
+
+#### 4.人脸美颜
+```
+import urllib.request ##人脸美颜
+import urllib.error
+import time
+
+http_url = 'https://api-cn.faceplusplus.com/humanbodypp/v2/segment'  ##申请调用的API接口的URL
+key = "_-mm3fWeDC8VGwrTDjCJJwX5A5qDosKi"  ##创建应用后的API_key
+secret = "rKLRM6_QAwHxgMpQTMxNqoigLhgcCrqw"   ##创建应用后的API_secret
+filepath = r"/Users/pc/Desktop/timg.jpg"   ##改成自己图片的路径
+
+boundary = '----------%s' % hex(int(time.time() * 1000))
+data = []
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'api_key')
+data.append(key)
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'api_secret')
+data.append(secret)
+data.append('--%s' % boundary)
+fr = open(filepath, 'rb')
+data.append('Content-Disposition: form-data; name="%s"; filename=" "' % 'image_file')
+data.append('Content-Type: %s\r\n' % 'application/octet-stream')
+data.append(fr.read())
+fr.close()
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'return_landmark')
+data.append('1')
+data.append('--%s' % boundary)
+data.append('Content-Disposition: form-data; name="%s"\r\n' % 'return_attributes')
+data.append(
+    "gender,age,smiling,headpose,facequality,blur,eyestatus,emotion,ethnicity,beauty,mouthstatus,eyegaze,skinstatus")
+data.append('--%s--\r\n' % boundary)
+
+for i, d in enumerate(data):
+    if isinstance(d, str):
+        data[i] = d.encode('utf-8')
+
+http_body = b'\r\n'.join(data)
+
+# build http request
+req = urllib.request.Request(url=http_url, data=http_body)
+
+# header
+req.add_header('Content-Type', 'multipart/form-data; boundary=%s' % boundary)
+
+try:
+    # post data to server
+    resp = urllib.request.urlopen(req, timeout=5)
+    # get response
+    qrcont = resp.read()
+    # if you want to load as json, you should decode first,
+    # for example: json.loads(qrount.decode('utf-8'))
+    print(qrcont.decode('utf-8'))
+except urllib.error.HTTPError as e:
+    print(e.read().decode('utf-8'))
+```
+
+![image.png]()
+![image.png]()
+
 
 ## （十一）API的运用：
 1. 百度API：
