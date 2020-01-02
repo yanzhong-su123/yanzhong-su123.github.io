@@ -141,10 +141,16 @@
 
 ## 交互及界面设计
 - APP界面图
-![界面图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2019122501180510.png)
-![界面图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912250118053.png)
-![界面图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912250118054.png)
-![界面图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/微信图片_2019122501180511.png)
+![首页](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%A6%96%E9%A1%B5.png)
+![上传图片](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png)
+![反馈结果](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%8F%8D%E9%A6%88%E7%BB%93%E6%9E%9C.png)
+![抠图图片上传](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E6%8A%A0%E5%9B%BE%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0.png)
+![抠图成功](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E6%8A%A0%E5%9B%BE%E6%88%90%E5%8A%9F.png)
+![风格置换](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%A3%8E%E6%A0%BC%E7%BD%AE%E6%8D%A2.png)
+![选择置换风格](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%80%89%E6%8B%A9%E7%BD%AE%E6%8D%A2%E9%A3%8E%E6%A0%BC.png)
+![置换成功](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/界面图/置换成功.png)
+![分享界面](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%88%86%E4%BA%AB%E7%95%8C%E9%9D%A2.png)
+![历史记录](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95.png)
 
 
 ### [原型文档下载区]()
