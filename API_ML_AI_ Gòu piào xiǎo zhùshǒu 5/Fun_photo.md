@@ -304,7 +304,7 @@ except urllib.error.HTTPError as e:
 ![image.png]()
 ![image.png]()
 
-### ⭐️API2.AI产品概率性：
+### ⭐️API2.AI产品使用比较分析：
 
 百度AI开放平台：https://ai.baidu.com/
 
@@ -329,7 +329,24 @@ Face++ 使用文档：https://console.faceplusplus.com.cn/service/image/intro#AP
 | 优点 | 精细化（类别少但精细） | 简单易用 | 资源内容丰富 | 功能强大且齐全 |
 | 缺点 | 功能不够丰富 | 功能较少 | 产品欠缺 | 暂没发现 |
 
-### ⭐️API3.API使用风险评估
+### ⭐️API3.使用后风险报告5%
+
+使用后风险报告：在PRD文件中是否有说明且提供连结证据，所使用的API类别的现在及未来发展性，如API市场竞争程度丶输入输出限制丶定价丶及可替代的程序库（改用自己开发的代码及数据库而不用API）等等
+
+\*
+
+| 使用后风险报告 | 说明 |
+| --- | --- |
+| API市场竞争程度 |  |
+| 输入输出限制 |  |
+| 定价 |  |
+| 可替代的程序库 |  |
+| 通用物体和场景识别 | [第一程序库](https://github.com/wanglimin/MRCNN-Scene-Recognition) |
+| 图像风格转换 | [第二程序库](https://github.com/wanglimin/MRCNN-Scene-Recognition) |
+| 人体抠像 |  |
+| 人脸美颜 |  |
+
+
 - AI错误率：
 >> 
 
