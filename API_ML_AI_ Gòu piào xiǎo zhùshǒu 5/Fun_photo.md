@@ -315,6 +315,7 @@ Face++ AI开放平台：https://www.faceplusplus.com.cn/
 Face++ 使用文档：https://console.faceplusplus.com.cn/service/image/intro#API
 
 \*
+
 | 适用性评估 | 美图 | Face++ | 腾讯AI | 百度AI |
 | --- | --- | --- | --- | --- |
 | 成熟度 | 一般 | 中等 | 较高 | 极高 |
