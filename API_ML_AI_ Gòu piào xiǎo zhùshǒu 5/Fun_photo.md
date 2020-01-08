@@ -114,65 +114,57 @@
 # 具体应用场景
 1. 用户想要快速地实现一键抠像和美颜的结合
 2. 用户需要快速了解图片的更多信息,可以与朋友有更多的内容进行探讨
-3. 用户想要换图片风格，可以把自己抠的人像置于自己想要的背景图中，简单地实现图片转换和人像结合
+3. 用户可以把自己抠的人像一键置换图片风格，简单地实现“抠图+创意风格变换”的快捷功能，增强用户的创意体验度。
+
 
 # ✨二、原型
-
-*点击进入交互体验：* http://nfuum074.gitee.io/graduation-album
-
-*点击进入仓库下载源文件：* https://gitee.com/nfuum074/Graduation-album.git
-
 ——————————————————————————————————————
+## 文档要求
 ### ⭐️ 1.原型1.交互及界面设计
 交互及界面设计：在PRD文件中是否有说明且原型是否有做到：交互及界面设计的某个核心交互环节使用了人工智能的加值 
-**请观察下面的图来做评价**
 
 ### ⭐️ 2.原型2.信息设计5%
 信息设计：在PRD文件中是否有说明且原型是否有做到：信息设计的某个核心信息或设计使用了人工智能的加值
 
 ### ⭐️ 3.原型3.原型文档5%
 原型文档：多少程度上有提供MVP可交互的原型文档，供它人在Github上下载使用
+**请观察下面的图来做评价，应该都实现了，手下留情哈哈哈**
 
 # 使用者交互与设计（axure产品原型）
-- 产品架构
-![产品结构图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191225011805.png)
 
-- 产品流程
-![产品流程图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912250118051.png)
+## 产品结构图
 
 ## 交互及界面设计
-- APP界面图
+### 1.产品功能结构图
+*通过首页来介绍产品功能*
 ![首页](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%A6%96%E9%A1%B5.png)
-![上传图片](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png)
-![反馈结果](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%8F%8D%E9%A6%88%E7%BB%93%E6%9E%9C.png)
-![抠图图片上传](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E6%8A%A0%E5%9B%BE%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0.png)
-![抠图成功](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E6%8A%A0%E5%9B%BE%E6%88%90%E5%8A%9F.png)
-![风格置换](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%A3%8E%E6%A0%BC%E7%BD%AE%E6%8D%A2.png)
-![选择置换风格](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%80%89%E6%8B%A9%E7%BD%AE%E6%8D%A2%E9%A3%8E%E6%A0%BC.png)
-![置换成功](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/界面图/置换成功.png)
-![分享界面](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%88%86%E4%BA%AB%E7%95%8C%E9%9D%A2.png)
-![历史记录](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95.png)
+
+### 2.产品信息架构图
+- APP界面图
+![上传图片](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png)![反馈结果](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%8F%8D%E9%A6%88%E7%BB%93%E6%9E%9C.png)![抠图图片上传](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E6%8A%A0%E5%9B%BE%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0.png)![抠图成功](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E6%8A%A0%E5%9B%BE%E6%88%90%E5%8A%9F.png)![风格置换](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%A3%8E%E6%A0%BC%E7%BD%AE%E6%8D%A2.png)![选择置换风格](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E9%80%89%E6%8B%A9%E7%BD%AE%E6%8D%A2%E9%A3%8E%E6%A0%BC.png)![置换成功](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/界面图/置换成功.png)![分享界面](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%88%86%E4%BA%AB%E7%95%8C%E9%9D%A2.png)![历史记录](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95.png)
+
+### 3.产品流程图
+![产品流程图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912250118051.png)
+
+### 4.产品结构图
+![产品结构图](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191225011805.png)
+
+### 口头操作说明
+该产品可以让用户快速地实现以“抠图”为核心进行创意创作和查找图片信息并返回结果，用户只需上传图片，他便可以根据自身的要求来实现图片信息的查找并返回结果、一键扣图+美颜，当生成抠的人像后可以进一步的创意创作。通过点击风格置换可以将刚刚抠的图进行风格置换，之后选择不同的置换风格来生成图片，置换完成亦可分享到不同的社交平台上。
+
+### [原型文档下载区](https://github.com/yanzhong-su123/yanzhong-su123.github.io/tree/master/API_ML_AI_%20G%C3%B2u%20pi%C3%A0o%20xi%C7%8Eo%20zh%C3%B9sh%C7%92u%205)
+## [原型文档交互展示](http://nfuum074.gitee.io/graduation-album)
 
 
-### [原型文档下载区]()
-## [原型文档交互展示]()
-
-
-## （十）产品结构图
-1. 产品功能结构图
-
-2. 产品信息结构图
-
-3. 产品流程图
-
-4. 产品结构图
 
 # ⭐️三、API 产品使用关键AI或机器学习之API的输出入展示
 ### ⭐️API1.使用水平
-完整代码请点击：
-实例代码
-#### 1.通用物体和场景识别
-##### 首先创建应用，然后获得官网中client_id 为官网获取的AK， client_secret 为官网获取的SK，来用于请求获得access_token
+#### 1.百度AI通用物体和场景识别api:
+- 接口描述：支持识别常见物体及场景，并返回大类及细分类的名称结果
+- 接口地址：https://ai.baidu.com/tech/imagerecognition/general
+- 请求方法：POST
+- 具体操作方式：***首先创建应用，然后获得官网中client_id 为官网获取的AK， client_secret 为官网获取的SK，来用于请求获得access_token***
+- 输入
 ```
 import requests 
 
@@ -182,12 +174,8 @@ response = requests.get(host)
 if response:
     print(response.json())
 ```
-#### 返回Access_token结果
-![image.png]()
-![image.png]()
 
 
-#### 2.图片风格置换
 ```
 import requests
 import base64
@@ -212,11 +200,37 @@ def Picture_content_recognition():
 if __name__ == "__main__":
     Picture_content_recognition()
 ```
+#### 返回Access_token结果
+![image.png]()
+![image.png]()
+
+- 使用效果显示：
+
+- 测试后发现的问题：对于一些较暗的场景，识别的物体可能会受到光线的影响而识别物体不够精确。
+
+
+#### 2.图片风格置换
+- 接口描述：支持将照片转换成卡通画或素描风格，欣赏原图的多样风格
+- 接口地址：https://ai.baidu.com/tech/imageprocess/style_trans
+- 请求方法：POST
+- 具体操作方式：同样需要获得Access_token来调用API实现
 
 ![image.png]()
 ![image.png]()
+
+![image.png]()
+![image.png]()
+
+- 使用效果显示：
+
+- 测试后发现的问题：发现可以置换的风格较为单一，没有像美图一样可以置换的风格众多。
+
 
 #### 3.人体抠像
+- 接口描述：支持识别图片中的人像完整轮廓，从而进行人体抠像。
+- 接口地址：https://api-cn.faceplusplus.com/humanbodypp/v2/segment
+- 请求方法：POST
+- 输入：
 ```
 import urllib.request ##人体抠像
 import urllib.error
@@ -275,97 +289,68 @@ except urllib.error.HTTPError as e:
 ```
 
 ![image.png]()
+
+- 使用效果显示：
 ![image.png]()
+- 测试后发现的问题： 抠像后会有一些瑕疵，并不能完全地抠出全部人像，并且当用户选择有背景图较为复杂或背景图有人的时候，抠出的人像不能很好地表现，缺乏灵活的判断性。
 
 
 #### 4.人脸美颜
-```
-import urllib.request ##人脸美颜
-import urllib.error
-import time
-
-http_url = 'https://api-cn.faceplusplus.com/humanbodypp/v2/segment'  ##申请调用的API接口的URL
-key = "_-mm3fWeDC8VGwrTDjCJJwX5A5qDosKi"  ##创建应用后的API_key
-secret = "rKLRM6_QAwHxgMpQTMxNqoigLhgcCrqw"   ##创建应用后的API_secret
-filepath = r"/Users/pc/Desktop/timg.jpg"   ##改成自己图片的路径
-
-boundary = '----------%s' % hex(int(time.time() * 1000))
-data = []
-data.append('--%s' % boundary)
-data.append('Content-Disposition: form-data; name="%s"\r\n' % 'api_key')
-data.append(key)
-data.append('--%s' % boundary)
-data.append('Content-Disposition: form-data; name="%s"\r\n' % 'api_secret')
-data.append(secret)
-data.append('--%s' % boundary)
-fr = open(filepath, 'rb')
-data.append('Content-Disposition: form-data; name="%s"; filename=" "' % 'image_file')
-data.append('Content-Type: %s\r\n' % 'application/octet-stream')
-data.append(fr.read())
-fr.close()
-data.append('--%s' % boundary)
-data.append('Content-Disposition: form-data; name="%s"\r\n' % 'return_landmark')
-data.append('1')
-data.append('--%s' % boundary)
-data.append('Content-Disposition: form-data; name="%s"\r\n' % 'return_attributes')
-data.append(
-    "gender,age,smiling,headpose,facequality,blur,eyestatus,emotion,ethnicity,beauty,mouthstatus,eyegaze,skinstatus")
-data.append('--%s--\r\n' % boundary)
-
-for i, d in enumerate(data):
-    if isinstance(d, str):
-        data[i] = d.encode('utf-8')
-
-http_body = b'\r\n'.join(data)
-
-# build http request
-req = urllib.request.Request(url=http_url, data=http_body)
-
-# header
-req.add_header('Content-Type', 'multipart/form-data; boundary=%s' % boundary)
-
-try:
-    # post data to server
-    resp = urllib.request.urlopen(req, timeout=5)
-    # get response
-    qrcont = resp.read()
-    # if you want to load as json, you should decode first,
-    # for example: json.loads(qrount.decode('utf-8'))
-    print(qrcont.decode('utf-8'))
-except urllib.error.HTTPError as e:
-    print(e.read().decode('utf-8'))
-```
+- 接口描述：对图片进行美颜和美白。
+- 接口地址：https://api-cn.faceplusplus.com/facepp/v1/beautify
+- 请求方法：POST
+- 测试时美颜的效果较为自然，美颜的痕迹较轻，但是人脸美观度得到的一定的提升，符合产品的需求定位
 
 ![image.png]()
 ![image.png]()
 
+### ⭐️API2.AI产品使用比较分析：
 
-## （十一）API的运用：
-1. 百度API：
+百度AI开放平台：https://ai.baidu.com/
 
-```
-代码示例：
+百度AI使用文档：https://ai.baidu.com/ai-doc/IMAGERECOGNITION/Kk3bcxbxj
 
-```
+Face++ AI开放平台：https://www.faceplusplus.com.cn/
 
+Face++ 使用文档：https://console.faceplusplus.com.cn/service/image/intro#API
 
-```
-代码示例：
+\*
 
-```
+| 适用性评估 | 美图 | Face++ | 腾讯AI | 百度AI |
+| --- | --- | --- | --- | --- |
+| 成熟度 | 一般 | 中等 | 较高 | 极高 |
+| 通用物体和场景识别 | 图像分类（类别较少） | 场景与物体识别 | 场景/物体识别 | ✨✨ |
+| 图像风格转换 | 图像风格化（类别多） | 无产品 | 类似“滤镜” | ✨✨ |
+| 人体抠像 | 人像分割（黑白类别） | ✨✨ | 无产品 | 人像分割 |
+| 人脸美颜 | 美颜技术（分等级显示） | ✨✨ | 类似“人脸美妆” | 无产品 |
+| 性价比 | 一般（适合小众应用） | 较高 | 高 | 极高 |
+| 准确度 | 较高 | 高 | 一般 | 高 |
+| 价格 | 较低 | 低 | 一般 | 较高 |
+| 优点 | 精细化（类别少但精细） | 简单易用 | 资源内容丰富 | 功能强大且齐全 |
+| 缺点 | 功能不够丰富 | 功能较少 | 产品欠缺 | 暂没发现 |
 
-## （十二）AI产品概率性：
-1.	
-2.	
-3.	
+### ⭐️API3.使用后风险报告5%
 
-## (十三)API使用风险评估
-- AI错误率：
->> 
+使用后风险报告：在PRD文件中是否有说明且提供连结证据，所使用的API类别的现在及未来发展性，如API市场竞争程度丶输入输出限制丶定价丶及可替代的程序库（改用自己开发的代码及数据库而不用API）等等
 
-- 错误现象处理办法：
+\*
 
+|   使用后风险报告   |   说明   |
+|   ---   |   ---   |
+|   API市场竞争程度 | 人脸识别的竞争程度较大，许多平台都有做人脸识别的相关api产品，而且不同平台的侧重点、精确度都不同   |
+|   输入输出限制   |      |
+|   计价方式   |   方式有两种，其一、按QPS（并发量）计费： 调用量免费，免费QPS默认为2，如果您通过百度云的企业认证，接口的免费QPS将扩充至5。同时您可以根据业务需求随时购买扩充QPS，QPS可包月购买，也可按天单独购买，灵活多样，适应多场景需求；其二、按调用量计费： 免费调用量限额用完后，可选择购买次数包 或开通 按调用量后付费 两种计费方式付费使用，两种付费方式均可在 控制台 直接开通或购买，开通付费后默认按量后付费的方式进行阶梯计费，如有购买对应服务的次数包，则优先消耗次数包额度，抵扣完毕后自动转为按量后付费方式。   |
+|   可替代的程序库   |      |
+|   通用物体和场景识别   |   [第一程序库](https://github.com/wanglimin/MRCNN-Scene-Recognition)   |
+|   图像风格转换   |   [第二程序库](https://github.com/wanglimin/MRCNN-Scene-Recognition)   |
+|   人体抠像   |   [第三程序库](https://github.com/moreati/python-niceware)   |
+|   人脸美颜   |   [第四程序库](https://github.com/erogol/beauty.torch)   |
 
-## 产品的可行性:
+> API错误率：
+对于图片清晰度不高的照片，进行风格置换会出现一些模糊，进行抠图时会存在偏差
+对一些抖动拍后的图片，图像识别和场景返回的值会与没抖动的识别照片存在较大偏差的返回结果
 
+> 错误现象处理办法：
+可以添加抠像的图片的边缘值，提高识别率。
+可以在用户界面上添加提醒-请上传原图，以便提高识别度。
 
