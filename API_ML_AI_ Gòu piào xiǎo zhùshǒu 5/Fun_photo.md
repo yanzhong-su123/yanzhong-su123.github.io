@@ -71,7 +71,7 @@
 性别：无限制
 用户特征：喜欢使用图像处理软件但又嫌弃其操作过程较为复杂、对生活充满活力，敢于和愿意尝试不同的新事物。
 
-> 用户画像:
+> ![用户画像](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F.png)
 
 # 用户调研：访谈法（8人）
 *主要问题
@@ -202,44 +202,48 @@ if __name__ == "__main__":
 ```
 #### 返回Access_token结果
 ![access_token](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E5%90%8E%E6%98%BE%E7%A4%BA.png)
+
 ![access_token1](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E5%90%8E%E6%98%BE%E7%A4%BA2.png)
+
 ![access_token2](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E5%90%8E%E6%98%BE%E7%A4%BA3.png)
 
-- 使用效果显示：
-Content-Type: application/json;charset=UTF-8
+- 使用效果显示：（返回示例）
+
 {
-	"log_id": 327863200205075661,
+	"log_id": "2633580699724557192",
 	"result_num": 5,
-	"result": [{
-		"score": 0.967622,
-		"root": "公众人物",
-		"baike_info": {
-			"baike_url": "http://baike.baidu.com/item/%E6%96%B0%E5%9E%A3%E7%BB%93%E8%A1%A3/8035884",
-			"image_url": "http://imgsrc.baidu.com/baike/pic/item/91ef76c6a7efce1b27893518a451f3deb58f6546.jpg",
-			"description": "新垣结衣(Aragaki Yui)，1988年6月11日出生于冲绳县那霸市。日本女演员、歌手、模特。毕业于日出高中。2001年，参加《nicola》模特比赛并获得最优秀奖。2005年，因出演现代剧《涩谷15》而作为演员出道。2006年，参演校园剧《我的老大，我的英雄》；同年，她还出版了个人首本写真集《水漾青春》。2007年，她从日出高校毕业后开始专注于演艺发展，并发表个人首张音乐专辑《天空》；同年，新垣结衣还主演了爱情片《恋空》，而她也凭借该片获得了多个电影新人奖项。2010年，主演爱情片《花水木》。2011年，主演都市剧《全开女孩》。2012年，相继参演现代剧《Legal High》、剧情片《剧场版新参者：麒麟之翼》。2013年，主演都市剧《飞翔情报室》。2014年，她主演了剧情片《黎明的沙耶》。2016年，主演爱情喜剧《逃避虽可耻但有用》，并凭借该剧获得了多个电视剧女主角奖项。2017年，主演爱情片《恋爱回旋》，凭借该片获得第60届蓝丝带奖最佳女主角；同年11月，她还凭借医疗剧《Code Blue 3》获得第94届日剧学院赏最佳女配角。"
+	"result": [
+		{
+			"score": 0.203018,
+			"root": "植物-树",
+			"baike_info": {
+				"baike_url": "http://baike.baidu.com/item/%E6%A0%91/2699484",
+				"image_url": "http://imgsrc.baidu.com/baike/pic/item/6159252dd42a2834218a2c2154b5c9ea15cebfef.jpg",
+				"description": "树状图是一种数据结构，它是由n(n>=1)个有限结点组成一个具有层次关系的集合。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。它具有以下的特点：每个结点有零个或多个子结点；没有父结点的结点称为根结点；每一个非根结点有且只有一个父结点；除了根结点外，每个子结点可以分为多个不相交的子树；"
+			},
+			"keyword": "树"
 		},
-		"keyword": "新垣结衣"
-	},
-	{
-		"score": 0.716067,
-		"root": "人物-人物特写",
-		"keyword": "头发"
-	},
-	{
-		"score": 0.421281,
-		"root": "商品-穿戴",
-		"keyword": "围巾"
-	},
-	{
-		"score": 0.22347,
-		"root": "商品-五金",
-		"keyword": "拉链"
-	},
-	{
-		"score": 0.028031,
-		"root": "商品-穿戴",
-		"keyword": "脖套"
-	}]
+		{
+			"score": 0.15084,
+			"root": "自然风景-其他",
+			"keyword": "风景"
+		},
+		{
+			"score": 0.100728,
+			"root": "自然风景-天空",
+			"keyword": "天空"
+		},
+		{
+			"score": 0.052704,
+			"root": "商品-工艺品",
+			"keyword": "工艺品"
+		},
+		{
+			"score": 0.003729,
+			"root": "商品-工艺品",
+			"keyword": "佛像"
+		}
+	]
 }
 
 - 测试后发现的问题：对于一些较暗的场景，识别的物体可能会受到光线的影响而识别物体不够精确。
@@ -253,6 +257,7 @@ Content-Type: application/json;charset=UTF-8
 
 - 使用效果显示：
 ![识别图片](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E8%AF%86%E5%88%AB%E5%9B%BE%E7%89%87.png)
+
 ![识别返回结果](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E8%AF%86%E5%88%AB%E5%8F%8D%E9%A6%88%E7%BB%93%E6%9E%9C.png)
 
 - 测试后发现的问题：发现可以置换的风格较为单一，没有像美图一样可以置换的风格众多。
@@ -320,10 +325,9 @@ except urllib.error.HTTPError as e:
     print(e.read().decode('utf-8'))
 ```
 
-![image.png]()
-
 - 使用效果显示：
-![image.png]()
+![抠像后](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E6%8A%A0%E5%83%8F%E5%90%8E.png)
+
 - 测试后发现的问题： 抠像后会有一些瑕疵，并不能完全地抠出全部人像，并且当用户选择有背景图较为复杂或背景图有人的时候，抠出的人像不能很好地表现，缺乏灵活的判断性。
 
 
@@ -332,9 +336,6 @@ except urllib.error.HTTPError as e:
 - 接口地址：https://api-cn.faceplusplus.com/facepp/v1/beautify
 - 请求方法：POST
 - 测试时美颜的效果较为自然，美颜的痕迹较轻，但是人脸美观度得到的一定的提升，符合产品的需求定位
-
-![image.png]()
-![image.png]()
 
 ### ⭐️API2.AI产品使用比较分析：
 
