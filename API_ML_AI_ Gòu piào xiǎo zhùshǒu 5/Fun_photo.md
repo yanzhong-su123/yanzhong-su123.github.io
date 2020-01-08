@@ -201,10 +201,46 @@ if __name__ == "__main__":
     Picture_content_recognition()
 ```
 #### 返回Access_token结果
-![image.png]()
-![image.png]()
+![access_token](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E5%90%8E%E6%98%BE%E7%A4%BA.png)
+![access_token1](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E5%90%8E%E6%98%BE%E7%A4%BA2.png)
+![access_token2](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E4%BB%A3%E7%A0%81%E8%B0%83%E7%94%A8%E5%90%8E%E6%98%BE%E7%A4%BA3.png)
 
 - 使用效果显示：
+Content-Type: application/json;charset=UTF-8
+{
+	"log_id": 327863200205075661,
+	"result_num": 5,
+	"result": [{
+		"score": 0.967622,
+		"root": "公众人物",
+		"baike_info": {
+			"baike_url": "http://baike.baidu.com/item/%E6%96%B0%E5%9E%A3%E7%BB%93%E8%A1%A3/8035884",
+			"image_url": "http://imgsrc.baidu.com/baike/pic/item/91ef76c6a7efce1b27893518a451f3deb58f6546.jpg",
+			"description": "新垣结衣(Aragaki Yui)，1988年6月11日出生于冲绳县那霸市。日本女演员、歌手、模特。毕业于日出高中。2001年，参加《nicola》模特比赛并获得最优秀奖。2005年，因出演现代剧《涩谷15》而作为演员出道。2006年，参演校园剧《我的老大，我的英雄》；同年，她还出版了个人首本写真集《水漾青春》。2007年，她从日出高校毕业后开始专注于演艺发展，并发表个人首张音乐专辑《天空》；同年，新垣结衣还主演了爱情片《恋空》，而她也凭借该片获得了多个电影新人奖项。2010年，主演爱情片《花水木》。2011年，主演都市剧《全开女孩》。2012年，相继参演现代剧《Legal High》、剧情片《剧场版新参者：麒麟之翼》。2013年，主演都市剧《飞翔情报室》。2014年，她主演了剧情片《黎明的沙耶》。2016年，主演爱情喜剧《逃避虽可耻但有用》，并凭借该剧获得了多个电视剧女主角奖项。2017年，主演爱情片《恋爱回旋》，凭借该片获得第60届蓝丝带奖最佳女主角；同年11月，她还凭借医疗剧《Code Blue 3》获得第94届日剧学院赏最佳女配角。"
+		},
+		"keyword": "新垣结衣"
+	},
+	{
+		"score": 0.716067,
+		"root": "人物-人物特写",
+		"keyword": "头发"
+	},
+	{
+		"score": 0.421281,
+		"root": "商品-穿戴",
+		"keyword": "围巾"
+	},
+	{
+		"score": 0.22347,
+		"root": "商品-五金",
+		"keyword": "拉链"
+	},
+	{
+		"score": 0.028031,
+		"root": "商品-穿戴",
+		"keyword": "脖套"
+	}]
+}
 
 - 测试后发现的问题：对于一些较暗的场景，识别的物体可能会受到光线的影响而识别物体不够精确。
 
@@ -215,13 +251,9 @@ if __name__ == "__main__":
 - 请求方法：POST
 - 具体操作方式：同样需要获得Access_token来调用API实现
 
-![image.png]()
-![image.png]()
-
-![image.png]()
-![image.png]()
-
 - 使用效果显示：
+![识别图片](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E8%AF%86%E5%88%AB%E5%9B%BE%E7%89%87.png)
+![识别返回结果](https://github.com/yanzhong-su123/yanzhong-su123.github.io/blob/master/%E7%95%8C%E9%9D%A2%E5%9B%BE/%E8%AF%86%E5%88%AB%E5%8F%8D%E9%A6%88%E7%BB%93%E6%9E%9C.png)
 
 - 测试后发现的问题：发现可以置换的风格较为单一，没有像美图一样可以置换的风格众多。
 
@@ -335,16 +367,16 @@ Face++ 使用文档：https://console.faceplusplus.com.cn/service/image/intro#AP
 
 \*
 
-|   使用后风险报告   |   说明   |
-|   ---   |   ---   |
-|   API市场竞争程度 | 人脸识别的竞争程度较大，许多平台都有做人脸识别的相关api产品，而且不同平台的侧重点、精确度都不同   |
-|   输入输出限制   |      |
-|   计价方式   |   方式有两种，其一、按QPS（并发量）计费： 调用量免费，免费QPS默认为2，如果您通过百度云的企业认证，接口的免费QPS将扩充至5。同时您可以根据业务需求随时购买扩充QPS，QPS可包月购买，也可按天单独购买，灵活多样，适应多场景需求；其二、按调用量计费： 免费调用量限额用完后，可选择购买次数包 或开通 按调用量后付费 两种计费方式付费使用，两种付费方式均可在 控制台 直接开通或购买，开通付费后默认按量后付费的方式进行阶梯计费，如有购买对应服务的次数包，则优先消耗次数包额度，抵扣完毕后自动转为按量后付费方式。   |
-|   可替代的程序库   |      |
+|     使用后风险报告     |   说明   |
+|     ---     |     ---     |
+|     API市场竞争程度     | 人脸识别的竞争程度较大，许多平台都有做人脸识别的相关api产品，而且不同平台的侧重点、精确度都不同   |
+|     输入输出限制     |      |
+|     计价方式     |   方式有两种，其一、按QPS（并发量）计费： 调用量免费，免费QPS默认为2，如果您通过百度云的企业认证，接口的免费QPS将扩充至5。同时您可以根据业务需求随时购买扩充QPS，QPS可包月购买，也可按天单独购买，灵活多样，适应多场景需求；其二、按调用量计费： 免费调用量限额用完后，可选择购买次数包 或开通 按调用量后付费 两种计费方式付费使用，两种付费方式均可在 控制台 直接开通或购买，开通付费后默认按量后付费的方式进行阶梯计费，如有购买对应服务的次数包，则优先消耗次数包额度，抵扣完毕后自动转为按量后付费方式。   |
+|     可替代的程序库     |      |
 |   通用物体和场景识别   |   [第一程序库](https://github.com/wanglimin/MRCNN-Scene-Recognition)   |
-|   图像风格转换   |   [第二程序库](https://github.com/wanglimin/MRCNN-Scene-Recognition)   |
-|   人体抠像   |   [第三程序库](https://github.com/moreati/python-niceware)   |
-|   人脸美颜   |   [第四程序库](https://github.com/erogol/beauty.torch)   |
+|     图像风格转换     |   [第二程序库](https://github.com/wanglimin/MRCNN-Scene-Recognition)   |
+|     人体抠像     |   [第三程序库](https://github.com/moreati/python-niceware)   |
+|     人脸美颜     |   [第四程序库](https://github.com/erogol/beauty.torch)   |
 
 > API错误率：
 对于图片清晰度不高的照片，进行风格置换会出现一些模糊，进行抠图时会存在偏差
