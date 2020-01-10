@@ -387,3 +387,5 @@ Face++ 使用文档：https://console.faceplusplus.com.cn/service/image/intro#AP
 可以添加抠像的图片的边缘值，提高识别率。
 可以在用户界面上添加提醒-请上传原图，以便提高识别度。
 
+### ⭐️API4.API代码文档
+- API代码展示:https://gitee.com/nfuum074/CMS/blob/master/Untitled4.ipynb
